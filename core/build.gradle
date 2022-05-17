@@ -31,3 +31,5 @@ dependencies {
     implementation 'com.google.code.gson:gson:2.8.6'
     api 'org.nanohttpd:nanohttpd:2.2.0'
 }
+
+apply from: '../upload.gradle'

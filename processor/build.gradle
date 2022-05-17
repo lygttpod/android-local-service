@@ -11,3 +11,5 @@ dependencies {
     implementation project(":annotation")
     implementation "com.squareup:javapoet:1.13.0"
 }
+
+apply from: '../upload.gradle'
