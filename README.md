@@ -4,7 +4,7 @@
 
 1. 添加依赖
 
-```
+```groovy
     implementation 'io.github.lygttpod.android-local-service:core:0.0.1'
     implementation 'io.github.lygttpod.android-local-service:annotation:0.0.1'
     kapt 'io.github.lygttpod.android-local-service:processor:0.0.1'
@@ -12,7 +12,7 @@
 
 2. 创建本地服务（具体效果可以看项目demo） 定义如下类
 
-```
+```kotlin
    //@Service标记这是一个服务，端口号是服务器的端口号，注意端口号唯一
    @Service(port = 2222)
    abstract class AndroidService {
@@ -52,7 +52,7 @@
 
 3、初始化服务
 
-```
+```kotlin
         ①、初始化（建议在application中初始化）
         ALSHelper.init(this)
         
